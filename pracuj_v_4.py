@@ -37,9 +37,10 @@ print("Driver is scrolling down the page...")
 soup = BeautifulSoup(driver.page_source, 'html.parser')
 
 # selecting number of offers 
-nuber_offers = soup.find_all("span", class_="results-header__offer-count-text-number")[0].text
+nuber_offers = soup.find_all("span", class_="results-header-listing__offer-count-text-number")[0].text
 
-print()
+
+# print()
 print('Number of total results: ', nuber_offers)
 print()
  # pagination
