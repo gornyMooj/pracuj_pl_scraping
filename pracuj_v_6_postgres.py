@@ -52,6 +52,7 @@ soup = BeautifulSoup(driver.page_source, 'html.parser')
 # nuber_offers = soup.find_all("span", class_="results-header__offer-count-text-number")[0].text
 nuber_offers = soup.find_all("span", class_="results-header-listing__offer-count-text-number")[0].text
 
+
 print()
 print('Number of total results: ', nuber_offers)
 print()
