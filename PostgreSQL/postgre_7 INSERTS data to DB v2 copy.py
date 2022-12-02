@@ -37,6 +37,7 @@ def insert_data(row):
                 # insert data with cursor
                 cur.execute(SQL)
                 # commit the changes
+                
                 conn.commit()
         except:
                 pass
